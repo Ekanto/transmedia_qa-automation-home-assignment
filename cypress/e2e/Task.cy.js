@@ -1,7 +1,7 @@
 import CreateBoard from "../../PageObjects/CreateBoard.js";
 
-describe("test", () => {
-  it("test", () => {
+describe("Create board and verify", () => {
+  it("Create board and verify", () => {
     const cb = new CreateBoard();
     cb.getURL();
     cb.CreateBoard().click();
@@ -9,4 +9,9 @@ describe("test", () => {
     cb.CreateNewBoard();
     cb.VerifyBoardCreated()
   });
+  it('Add Lists', () => { 
+    
+
+  })
+
 });
