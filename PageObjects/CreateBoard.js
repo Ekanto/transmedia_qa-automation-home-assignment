@@ -5,14 +5,14 @@ class CreateBoard {
   newBoardCreate = '[data-cy="new-board-create"]';
   verifyBoard = '[data-cy="add-list-input"]'
 
-  getURL() {
+  GetURL() {
     return cy.visit(this.URL);
   }
   CreateBoard() {
     return cy.get(this.selectBoard);
   }
   NewBoardInput() {
-    return cy.get(this.inputBoardName).type("test");
+    return cy.get(this.inputBoardName).type("Test 10 Board");
   }
   CreateNewBoard(){
     return cy.get(this.newBoardCreate).click();
