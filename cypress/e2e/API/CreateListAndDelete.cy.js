@@ -1,6 +1,6 @@
 import { resolve } from "bluebird";
 
-describe("Create List", () => {
+describe("Create List and delete created list", () => {
   let boardID;
   let listID;
   it("Create Board", () => {

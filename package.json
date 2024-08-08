@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "allure-cypress": "^3.0.0-beta.9",
     "cypress": "^13.13.2"
   },
   "name": "transmedia_qa-automation-home-assignment",
@@ -168,7 +169,10 @@
     "yauzl": "^2.10.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "e2e-regression": "npx cypress run --spec cypress/e2e/run_all.cy.js --config-file cypress.config.js",
+    "e2e-regression-allure": "npx cypress run --spec cypress/e2e/run_all.cy.js --config-file cypress.config.js --env allure=true",
+    "e2e-regression-allure-report": "allure generate allure-results --clean && allure open"
   },
   "author": "Omar",
   "license": "ISC",

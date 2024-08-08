@@ -8,7 +8,7 @@ class DeleteList {
   }
 
   SelectBoard() {
-    return cy.get('[data-cy="board-item"]').contains('Test Board 15').click();
+    return cy.get('[data-cy="board-item"]').contains('Test Board 20').click();
   }
 
   SelectListOptions() {
