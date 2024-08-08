@@ -34,5 +34,8 @@ This project covers an End-to-end(e2e) automation task for TransMedia Inc. We ha
 3. Now run `npm install` to install the node dev dependencies 
 
 ## Tools and Framework used
-Following packages and framework we have used for this project
+Following packages and frameworks we have used for this project - 
+- Cypress
+- allure-commandline
+- allure-cypress
 
