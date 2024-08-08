@@ -1,3 +1,5 @@
+import { ListNameGenerator } from "../Resources/ListNameGenerator";
+
 class CreateBoard {
   URL = "http://localhost:3000/";
   selectBoard = '[data-cy="create-board"]';
@@ -12,7 +14,7 @@ class CreateBoard {
     return cy.get(this.selectBoard);
   }
   NewBoardInput() {
-    return cy.get(this.inputBoardName).type("Test 11 Board");
+    return cy.get(this.inputBoardName).type('Test Board 15');
   }
   CreateNewBoard(){
     return cy.get(this.newBoardCreate).click();

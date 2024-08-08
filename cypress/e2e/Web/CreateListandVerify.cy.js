@@ -1,4 +1,4 @@
-import CreateList from "../../PageObjects/CreateList.js";
+import CreateList from "../../../PageObjects/CreateList.js";
 
 describe("Create List and Verify", () => {
   it("Create two lists and Verify", () => {

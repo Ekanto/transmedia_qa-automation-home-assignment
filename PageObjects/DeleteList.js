@@ -1,3 +1,5 @@
+import { ListNameGenerator } from "../Resources/ListNameGenerator";
+
 class DeleteList {
   URL = "http://localhost:3000/";
 
@@ -6,7 +8,7 @@ class DeleteList {
   }
 
   SelectBoard() {
-    return cy.get('[data-cy="board-item"]').contains("Test 11 Board").click();
+    return cy.get('[data-cy="board-item"]').contains('Test Board 15').click();
   }
 
   SelectListOptions() {

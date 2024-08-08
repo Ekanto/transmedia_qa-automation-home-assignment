@@ -1,4 +1,4 @@
-import CreateBoard from "../../PageObjects/CreateBoard.js";
+import CreateBoard from "../../../PageObjects/CreateBoard.js";
 
 
 describe("Create board and verify", () => {

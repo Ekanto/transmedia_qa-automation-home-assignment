@@ -1,4 +1,4 @@
-import DeleteList from "../../PageObjects/DeleteList";
+import DeleteList from "../../../PageObjects/DeleteList";
 
 describe("Delete list", () =>{
     it("Delete the last created list and verify", () => {
