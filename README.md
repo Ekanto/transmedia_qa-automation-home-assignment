@@ -31,7 +31,7 @@ This project covers an End-to-end(e2e) automation task for TransMedia Inc. We ha
    ```sh
    cd transmedia_qa-automation-home-assignment
    
-3. Now run `npm install` which will install the node dev dependencies 
+3. Now run `npm install` to install the node dev dependencies 
 
 ## Tools and Framework used
 Following packages and framework we have used for this project
