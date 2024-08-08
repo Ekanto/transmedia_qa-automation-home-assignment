@@ -12,7 +12,7 @@ class CreateBoard {
     return cy.get(this.selectBoard);
   }
   NewBoardInput() {
-    return cy.get(this.inputBoardName).type("Test 10 Board");
+    return cy.get(this.inputBoardName).type("Test 11 Board");
   }
   CreateNewBoard(){
     return cy.get(this.newBoardCreate).click();

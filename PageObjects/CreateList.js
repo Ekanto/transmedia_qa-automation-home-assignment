@@ -7,19 +7,13 @@ class CreateList {
   }
 
   SelectBoard() {
-    return cy.get(this.createList).contains("Test 10 Board").click();
+    return cy.get(this.createList).contains("Test 11 Board").click();
   }
 
   AddListInput(){
     return cy.get('[data-cy="add-list-input"]').type("This is test List").type("{enter}");
   }
 
-  SelectListOptions(){ 
-    return cy.get('[data-cy="list-options"]').eq(1).click();
-  }
-
-  DeleteList(){
-    return cy.get('[data-cy="delete-list"]').click();
-  }
+  
 }
 export default CreateList;
