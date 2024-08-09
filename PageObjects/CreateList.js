@@ -10,7 +10,7 @@ class CreateList {
   }
 
   SelectBoard() {
-    return cy.get(this.createList).contains('Test Board 20').click();
+    return cy.get(this.createList).contains('Test Board 25').click();
   }
 
   AddListInput(){
