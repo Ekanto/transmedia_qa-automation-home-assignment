@@ -1,4 +1,3 @@
-import { get } from "lodash";
 import ListNameGenerator from "../Resources/ListNameGenerator";
 import URL from "../Resources/URL";
 class CreateBoard {

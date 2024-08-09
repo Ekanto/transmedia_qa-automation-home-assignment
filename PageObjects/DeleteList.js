@@ -1,8 +1,5 @@
-import { ListNameGenerator } from "../Resources/ListNameGenerator";
 import CreateBoard from "./CreateBoard";
 import URL from "../Resources/URL";
-
-
 
 class DeleteList {
   URL = URL.url;
@@ -12,7 +9,10 @@ class DeleteList {
   }
 
   SelectBoard() {
-    return cy.get('[data-cy="board-item"]').contains(CreateBoard.boardName).click();
+    return cy
+      .get('[data-cy="board-item"]')
+      .contains(CreateBoard.boardName)
+      .click();
   }
 
   SelectListOptions() {
