@@ -1,7 +1,10 @@
-import { ListNameGenerator } from "../Resources/ListNameGenerator";
+import ListNameGenerator  from "../Resources/ListNameGenerator";
+import CreateBoard from "./CreateBoard";
 
 
 class CreateList {
+
+ 
   URL = "http://localhost:3000/";
   createList = '[data-cy="board-item"]';
 
@@ -9,8 +12,9 @@ class CreateList {
     return cy.visit(this.URL);
   }
 
+
   SelectBoard() {
-    return cy.get(this.createList).contains('Test Board 256').click();
+    return cy.get(this.createList).contains(CreateBoard.boardName).click();
   }
 
   AddListInput(){

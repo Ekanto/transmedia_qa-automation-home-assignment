@@ -5,7 +5,7 @@ describe("Create board and verify", () => {
   it("Create board and verify", () => {
     const cb = new CreateBoard();
     cb.GetURL();
-    cb.CreateBoard().click();
+    cb.SelectBoard().click();
     cb.NewBoardInput();
     cb.CreateNewBoard();
     cb.VerifyBoardCreated();

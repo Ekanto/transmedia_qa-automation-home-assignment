@@ -1,4 +1,6 @@
 import { ListNameGenerator } from "../Resources/ListNameGenerator";
+import CreateBoard from "./CreateBoard";
+
 
 class DeleteList {
   URL = "http://localhost:3000/";
@@ -8,7 +10,7 @@ class DeleteList {
   }
 
   SelectBoard() {
-    return cy.get('[data-cy="board-item"]').contains('Test Board 256').click();
+    return cy.get('[data-cy="board-item"]').contains(CreateBoard.boardName).click();
   }
 
   SelectListOptions() {
