@@ -14,7 +14,7 @@ class CreateBoard {
     return cy.get(this.selectBoard);
   }
   NewBoardInput() {
-    return cy.get(this.inputBoardName).type('Test Board 255');
+    return cy.get(this.inputBoardName).type('Test Board 256');
   }
   CreateNewBoard(){
     return cy.get(this.newBoardCreate).click();
