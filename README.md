@@ -9,8 +9,6 @@ This project covers an End-to-end(e2e) automation task for TransMedia Inc. We ha
   - [Features](#features)
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Contributing](#contributing)
-  - [License](#license)
   - [Contact](#contact)
 
 ## Features
@@ -55,6 +53,10 @@ This project includes a reporting tool **Allure Report** which helps visualize t
 - After completion of this command, now run `npm run e2e-regression-allure-report`
 - It will invoke a browser and you should see all the tests result in your browser better!
 ![My Image](README-RESOURCES/allure.png)
+
+## Contact 
+
+For any queries, reach me at - **umarekanto@gmail.com**
 
 
    
