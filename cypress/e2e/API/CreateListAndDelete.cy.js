@@ -1,4 +1,4 @@
-describe("Create List and delete created list", () => {
+describe("Create List and delete created list using API", () => {
   let boardID;
   let listID;
   it("Create Board", () => {
@@ -6,7 +6,7 @@ describe("Create List and delete created list", () => {
       method: "POST",
       url: "http://localhost:3000/api/boards",
       body: {
-        name: "Test Board101",
+        name: "API Board",
       },
     })
       .its("body")
@@ -20,7 +20,7 @@ describe("Create List and delete created list", () => {
       method: "POST",
       url: `http://localhost:3000/api/lists`,
       body: {
-        name: "Test List 101",
+        name: "API List",
         boardId: boardID,
       },
     }).then((response) => {
