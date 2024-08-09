@@ -1,11 +1,13 @@
 import ListNameGenerator  from "../Resources/ListNameGenerator";
 import CreateBoard from "./CreateBoard";
+import URL from "../Resources/URL";
+
 
 
 class CreateList {
 
  
-  URL = "http://localhost:3000/";
+  URL = URL.url;
   createList = '[data-cy="board-item"]';
 
   GetUrl() {

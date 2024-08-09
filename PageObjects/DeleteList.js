@@ -1,9 +1,11 @@
 import { ListNameGenerator } from "../Resources/ListNameGenerator";
 import CreateBoard from "./CreateBoard";
+import URL from "../Resources/URL";
+
 
 
 class DeleteList {
-  URL = "http://localhost:3000/";
+  URL = URL.url;
 
   GetUrl() {
     return cy.visit(this.URL);

@@ -1,9 +1,9 @@
 import { get } from "lodash";
 import ListNameGenerator from "../Resources/ListNameGenerator";
-
+import URL from "../Resources/URL";
 class CreateBoard {
   static boardName = ListNameGenerator.generate();
-  URL = "http://localhost:3000/";
+  URL = URL.url;
   selectBoard = '[data-cy="create-board"]';
   inputBoardName = '[data-cy="new-board-input"]';
   newBoardCreate = '[data-cy="new-board-create"]';
@@ -15,7 +15,7 @@ class CreateBoard {
   SelectBoard() {
     return cy.get(this.selectBoard);
   }
-  NewBoardInput() { // Store the generated name in a variable
+  NewBoardInput() {
     return cy.get(this.inputBoardName).type(this.constructor.boardName);
   }
   CreateNewBoard() {
